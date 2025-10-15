@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Analysis | PPC Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B1120; color: #cbd5e1; }
+        .card { 
+            background: linear-gradient(145deg, #1e293b, #111827); 
+            border: 1px solid #334155; 
+            border-radius: 0.75rem; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06), 0 0 0 1px rgba(255,255,255,0.05) inset;
+        }
+        .table-header { background-color: #334155; color: #f1f5f9; }
+        .table-row-odd { background-color: #1e293b; }
+        .table-row-even { background-color: #283549; }
+        .highlight-green { color: #6ee7b7; }
+        .highlight-red { color: #f87171; }
+        .highlight-amber { color: #facc15; }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto max-w-5xl px-4 py-12 md:py-16">
+        <header class="mb-10">
+            <a href="index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition mb-4">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to Portfolio Hub
+            </a>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-50">
+                Performance Analysis & Optimization Report
+            </h1>
+            <p class="text-slate-400 mt-2 max-w-3xl">
+                This report covers the initial 7-day launch period for the <span class="font-semibold text-slate-300">MentorVerse AI</span> Google Ads campaign, focusing on key insights, data-driven actions, and strategic next steps.
+            </p>
+        </header>
+
+        <main class="space-y-12">
+            <!-- Data Overview -->
+            <section class="card p-6 md:p-8">
+                <h2 class="text-xl font-bold text-slate-100 mb-4">Week 1 Performance Dashboard</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="table-header">
+                            <tr>
+                                <th class="p-3">Ad Group</th>
+                                <th class="p-3">Impressions</th>
+                                <th class="p-3">CTR</th>
+                                <th class="p-3">Conversions</th>
+                                <th class="p-3">Conv. Rate</th>
+                                <th class="p-3">Cost (₹)</th>
+                                <th class="p-3">CPA (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row-odd">
+                                <td class="p-3 font-medium highlight-green">NEET PG - Online Coaching</td>
+                                <td class="p-3">6,500</td>
+                                <td class="p-3">6.92%</td>
+                                <td class="p-3">18</td>
+                                <td class="p-3 font-bold">4.00%</td>
+                                <td class="p-3">12,500</td>
+                                <td class="p-3 font-bold highlight-green">₹694</td>
+                            </tr>
+                            <tr class="table-row-even">
+                                <td class="p-3 font-medium highlight-red">NEET PG - Mock Tests</td>
+                                <td class="p-3">3,200</td>
+                                <td class="p-3 font-bold">9.38%</td>
+                                <td class="p-3">5</td>
+                                <td class="p-3">1.67%</td>
+                                <td class="p-3">9,000</td>
+                                <td class="p-3 font-bold highlight-red">₹1,800</td>
+                            </tr>
+                            <tr class="table-row-odd">
+                                <td class="p-3 font-medium">NEET PG - Study Material</td>
+                                <td class="p-3">4,100</td>
+                                <td class="p-3">5.12%</td>
+                                <td class="p-3">8</td>
+                                <td class="p-3">3.81%</td>
+                                <td class="p-3">6,500</td>
+                                <td class="p-3">₹812</td>
+                            </tr>
+                            <tr class="table-header font-bold text-base">
+                                <td class="p-3">Campaign Total</td>
+                                <td class="p-3">13,800</td>
+                                <td class="p-3">6.96%</td>
+                                <td class="p-3">31</td>
+                                <td class="p-3">3.23%</td>
+                                <td class="p-3">28,000</td>
+                                <td class="p-3">₹903</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <p class="text-xs text-center mt-3 text-slate-500">Target CPA: ₹800</p>
+                </div>
+            </section>
+            
+            <!-- Key Learnings -->
+            <section class="card p-6 md:p-8">
+                <h2 class="text-xl font-bold text-slate-100 mb-6">Key Learnings & Data-Driven Insights</h2>
+                <div class="space-y-6">
+                    <!-- A/B Test Insight -->
+                    <div>
+                        <h3 class="font-semibold text-indigo-300 mb-2 flex items-center"><i data-lucide="flask-conical" class="w-4 h-4 mr-2"></i>A/B Test Result: Emotional Appeal Wins</h3>
+                        <p class="text-sm text-slate-400 mb-3">The "Online Coaching" ad group test confirmed the hypothesis: messaging focused on overcoming procrastination (emotional) significantly outperformed messaging focused on AI features (logical).</p>
+                        <div class="overflow-x-auto text-xs">
+                             <table class="w-full text-left">
+                                <thead class="bg-slate-700/50"><tr><th class="p-2">Ad Variation</th><th class="p-2">CTR</th><th class="p-2">Conv. Rate</th><th class="p-2">CPA (₹)</th></tr></thead>
+                                <tbody>
+                                    <tr class="bg-slate-800/50"><td class="p-2">A: Logical Appeal</td><td class="p-2">6.15%</td><td class="p-2">3.31%</td><td class="p-2">₹785</td></tr>
+                                    <tr class="bg-green-900/20"><td class="p-2 font-bold highlight-green">B: Emotional Hook</td><td class="p-2 font-bold highlight-green">7.50% (+22%)</td><td class="p-2 font-bold highlight-green">4.52% (+36%)</td><td class="p-2 font-bold highlight-green">₹667 (-15%)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                     <!-- SQR Insight -->
+                    <div>
+                        <h3 class="font-semibold text-indigo-300 mb-2 flex items-center"><i data-lucide="search" class="w-4 h-4 mr-2"></i>Search Query Analysis: High CTR, Low Intent</h3>
+                        <p class="text-sm text-slate-400 mb-3">The "Mock Tests" ad group had a high CTR but a very low conversion rate. The Search Query Report revealed a clear reason: the ads were attracting users with no purchase intent, who were looking for free materials.</p>
+                        <div class="bg-slate-900/50 p-3 rounded-md border border-slate-700">
+                            <p class="text-xs text-slate-400">Sample irrelevant search terms triggering ads:</p>
+                            <div class="mt-2 text-sm">
+                                <code class="bg-red-900/20 text-red-300 px-2 py-1 rounded">"neet pg mock test free pdf"</code>
+                                <code class="bg-red-900/20 text-red-300 px-2 py-1 rounded">"prepladder free mock test"</code>
+                                <code class="bg-red-900/20 text-red-300 px-2 py-1 rounded">"neet pg previous year papers download"</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action & Next Steps -->
+            <section class="grid md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h2 class="text-lg font-bold text-slate-100 mb-4 flex items-center"><i data-lucide="zap" class="w-5 h-5 mr-2 text-amber-400"></i>Immediate Action Plan</h2>
+                    <ul class="space-y-3 text-sm list-disc list-inside text-slate-300">
+                        <li><span class="font-semibold text-slate-100">Pause Losing Creatives:</span> All "Logical Appeal" ads (Variation A) will be paused to allocate 100% of the "Coaching" budget to the winning "Emotional Hook" ads.</li>
+                        <li><span class="font-semibold text-slate-100">Implement Negative Keywords:</span> Add broad match negatives (<code class="text-xs bg-slate-700 p-1 rounded">-free</code>, <code class="text-xs bg-slate-700 p-1 rounded">-pdf</code>, <code class="text-xs bg-slate-700 p-1 rounded">-download</code>) to the "Mock Tests" ad group to eliminate spend on low-intent queries.</li>
+                        <li><span class="font-semibold text-slate-100">Re-allocate Budget:</span> Reduce the daily budget for "Mock Tests" by 50% and re-allocate that spend to the top-performing "Online Coaching" ad group to maximize conversions.</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h2 class="text-lg font-bold text-slate-100 mb-4 flex items-center"><i data-lucide="trending-up" class="w-5 h-5 mr-2 text-green-400"></i>Opportunities & Next Steps</h2>
+                     <ul class="space-y-3 text-sm list-disc list-inside text-slate-300">
+                        <li><span class="font-semibold text-slate-100">Iterate on Winning Angle:</span> Launch a new A/B test against the "Gamification" ad, testing a new emotional angle focused on "Reducing Exam Anxiety."</li>
+                        <li><span class="font-semibold text-slate-100">Scale What Works:</span> If the CPA for "Online Coaching" remains below target after 72 hours, increase its daily budget by another 25% to scale lead volume.</li>
+                        <li><span class="font-semibold text-slate-100">Explore Landing Page Test:</span> Propose a new landing page variant for the "Online Coaching" group that more closely mirrors the "Gamification" messaging from the winning ad.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
+
